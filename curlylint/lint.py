@@ -21,7 +21,7 @@ def parse_file(path_and_config):
     """
     path, config = path_and_config
 
-    with path.open("r", encoding="utf8") as f:
+    with path.open("r", encoding="utf-8") as f:
         source = f.read()
 
     return parse_source(path, config, source)
